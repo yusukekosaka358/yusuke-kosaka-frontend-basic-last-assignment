@@ -1,0 +1,53 @@
+@use "../../variables" as *;
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+
+    position: absolute;
+    width: 200px;
+    height: 55px;
+    left: 20px;
+    top: 20px;
+
+    font-size: $fontsize-s;
+    font-family: $fontfamily-gothic;
+    background-color: $black;
+
+}
+
+a {
+    color: $white;
+}
+
+h1:hover {
+    background-color: $orange_bistre;
+}
+
+a:hover {
+    color: $white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: $breakpoint-lg) {
+    h1 {
+        position: absolute;
+        width: 150px;
+        height: 55px;
+        left: 20px;
+        top: 20px;
+    }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+    h1 {
+        position: absolute;
+        width: 180px;
+        height: 45px;
+        left: 20px;
+        top: 20px;
+    }
+}
