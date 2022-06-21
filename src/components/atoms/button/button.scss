@@ -1,8 +1,7 @@
 @use "../../variables" as *;
 
-h1 {
+a {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 0px 16px;
@@ -16,24 +15,19 @@ h1 {
     font-size: $fontsize-s;
     font-family: $fontfamily-gothic;
     background-color: $black;
-
-}
-
-a {
     color: $white;
-}
-
-h1:hover {
-    background-color: $orange_bistre;
+    transition: 0.2s;
 }
 
 a:hover {
+    background-color: $orange_bistre;
     color: $white;
     text-decoration: none;
+    transition: 0.2s;
 }
 
 @media screen and (max-width: $breakpoint-lg) {
-    h1 {
+    a {
         position: absolute;
         width: 150px;
         height: 55px;
@@ -43,11 +37,9 @@ a:hover {
 }
 
 @media screen and (max-width: $breakpoint-md) {
-    h1 {
+    a {
         position: absolute;
         width: 180px;
         height: 45px;
-        left: 20px;
-        top: 20px;
     }
 }
