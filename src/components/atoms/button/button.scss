@@ -1,11 +1,10 @@
 @use "../../variables" as *;
 
 a {
-    position: absolute;
     width: 200px;
     height: 55px;
     text-align: center;
-    padding: 17.5px 0px;
+    padding: 17.5px 74px;
 
     font-size: $fontsize-s;
     font-family: $fontfamily-gothic;
@@ -23,6 +22,7 @@ a:hover {
 @media screen and (max-width: $breakpoint-lg) {
     a {
         width: 150px;
+        padding: 17.5px 49px;
     }
 }
 
@@ -30,6 +30,6 @@ a:hover {
     a {
         width: 180px;
         height: 45px;
-        padding: 12.5px 0px;
+        padding: 12.5px 64px;
     }
 }
