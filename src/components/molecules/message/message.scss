@@ -1,10 +1,8 @@
 @use "../../variables" as *;
 
 .message {
-    background-color: $black;
     
     #big {
-        color: $white;
         font-family: $fontfamily-mincho;
         text-align: center;
         font-size: $fontsize-xl;
