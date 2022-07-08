@@ -1,33 +1,29 @@
 @use "../../variables" as *;
 
 .message {
-    
+    text-align: center;
+
     #big {
         font-family: $fontfamily-mincho;
-        text-align: center;
         font-size: $fontsize-xl;
         line-height: 54px;
         padding: 52px 20px 0px;
         
-        @media screen and (max-width: $breakpoint-lg) {
-            & {
+        @media screen and (max-width: $breakpoint-lg) {           
                 font-size: $fontsize-l;
                 line-height:30px;
                 padding: 32px 20px 0px;
-            }
         }
     }
 
     #small {
-        color: $white;
-        text-align: center;
         font-size: $fontsize-s;
         line-height: 36px;
-        padding: 10px 121.5px 52px;
+        padding: 0px 121.5px 52px;
 
-        & {
-            line-height: 28px;
-            padding: 6px 58px 32px;
-        }
+        @media screen and (max-width: $breakpoint-md) {            
+                line-height: 28px;
+                padding: 6px 58px 32px;
+        }    
     }    
 }
