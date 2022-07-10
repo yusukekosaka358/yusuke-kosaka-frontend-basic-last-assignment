@@ -1,10 +1,11 @@
 @use "../../variables" as *;
 
 a {
+    display: block;
     width: 200px;
     height: 55px;
     text-align: center;
-    padding: 17px 74px;
+    padding: 17px 0px;
 
     font-size: $fontsize-s;
     background-color: $black;
@@ -19,7 +20,6 @@ a {
     @media screen and (max-width: $breakpoint-lg) {
         & {
             width: 150px;
-            padding: 17px 49px;
         }
     }
 
@@ -27,7 +27,7 @@ a {
         & {
             width: 180px;
             height: 45px;
-            padding: 13px 64px;
+            padding: 13px 0px;
         }
     }
 }    
