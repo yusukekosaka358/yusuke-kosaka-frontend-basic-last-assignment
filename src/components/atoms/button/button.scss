@@ -1,6 +1,6 @@
 @use "../../variables" as *;
 
-a {
+.button {
     display: block;
     width: 200px;
     height: 55px;
@@ -18,16 +18,12 @@ a {
     }
 
     @media screen and (max-width: $breakpoint-lg) {
-        & {
-            width: 150px;
-        }
+        width: 150px;
     }
 
     @media screen and (max-width: $breakpoint-md) {
-        & {
-            width: 180px;
-            height: 45px;
-            padding: 13px 0px;
-        }
+        width: 180px;
+        height: 45px;
+        padding: 13px 0px;
     }
 }    
