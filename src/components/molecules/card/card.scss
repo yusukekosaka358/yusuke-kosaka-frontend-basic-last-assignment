@@ -2,6 +2,7 @@
 
 .card {
     position: relative;
+    border-radius: 0;
     .card-title {
         position: absolute;
         left: 6px;
@@ -9,6 +10,7 @@
         font-size: $fontsize-l;
         font-weight: 700;
         line-height: 29px;
+        color: $orange_bistre;
     }
 
     .triangle {
@@ -21,6 +23,7 @@
     .card-image {
         overflow: hidden;
         img {
+            width: 100%;
             &:hover {
                 transform: scale(1.2);
                 transition: all 0.5s ease;
