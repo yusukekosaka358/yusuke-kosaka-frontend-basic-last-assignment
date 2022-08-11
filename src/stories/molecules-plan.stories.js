@@ -3,4 +3,4 @@ import "../components/molecules/plan/plan.scss";
 
 export default { title: "Molecules/Plan" };
 
-export const Button = () => Item_Plan;
+export const Plan = () => Item_Plan;
