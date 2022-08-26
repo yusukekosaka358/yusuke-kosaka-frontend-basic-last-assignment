@@ -1,69 +1,70 @@
 @use "../../variables" as *;
 
 .plan {
-    font-weight: 700;
-    box-sizing: border-box;
+  font-weight: 700;
+  box-sizing: border-box;
 
-    &.odd {
-        border: 1px solid $gray_gainsboro;
-    }
-
-    &.even {
-        border: 5px solid $orange_bistre;
-    }
-
+  &.odd {
+    border: 1px solid $gray_gainsboro;
     .plan-name {
-        background-color: $orange_zorba;
-        color: white;
-        padding: 20px 40px;
-        text-align: center;
-        font-size: 20px;
-        line-height: 29px;
+      background-color: $orange_zorba;
+    }
+  }
 
-        &.even {
-            background-color: $orange_bistre;
-        }
+  &.even {
+    border: 5px solid $orange_bistre;
+    .plan-name {
+      background-color: $orange_bistre;
+    }
+  }
+
+  .plan-name {
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .plan-price {
+    text-align: center;
+    background-color: $gray_desertStorm;
+    color: $orange_bistre;
+    padding: 24px 24px;
+    font-size: 40px;
+    line-height: 58px;
+
+    &::before {
+      content: "￥";
+      font-size: 20px;
+      line-height: 29px;
     }
 
-    .plan-price {
-        text-align: center;
-        background-color: $gray_desertStorm;
-        color: $orange_bistre;
-        padding: 24px 24px;
-        font-size: 40px;
-        line-height: 58px;
-
-        &::before {
-            content: "￥";
-            font-size: 20px;
-            line-height: 29px;
-        }
-
-        &::after {
-            content: "月額";
-            color: black;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 20px;
-            display: flex;
-            flex-direction: column;
-            margin-top: 16px;
-        }
+    &::after {
+      content: "月額";
+      color: black;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 16px;
     }
+  }
 
-    ul {
-        padding: 0;
-        margin: 0;
-        li {
-            list-style: none;
-            text-align: center;
-            font-weight: 400;
-            padding: 20px 10px;
-            border: 1px solid $gray_gainsboro;
-        }
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      text-align: center;
+      font-weight: 400;
+      padding: 20px 10px;
+      border: 1px solid $gray_gainsboro;
     }
+  }
 
-    @media screen and (max-width: $breakpoint-md) {
-        margin-bottom: 72px;
-    }
+  @media screen and (max-width: $breakpoint-md) {
+    margin-bottom: 72px;
+  }
 }
