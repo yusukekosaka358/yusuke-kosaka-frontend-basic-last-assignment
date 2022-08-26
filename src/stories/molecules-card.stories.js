@@ -3,4 +3,4 @@ import "../components/molecules/card/card.scss";
 
 export default { title: "Molecules/Card" }
 
-export const Example = () => Item_Card;
+export const Card = () => Item_Card;

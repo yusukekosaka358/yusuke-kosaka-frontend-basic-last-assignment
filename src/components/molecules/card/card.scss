@@ -1,50 +1,51 @@
 @use "../../variables" as *;
 
 .card {
-    position: relative;
-    border-radius: 0;
-    .card-title {
-        position: absolute;
-        left: 6px;
-        z-index: 1;
-        font-size: $fontsize-l;
-        font-weight: 700;
-        line-height: 29px;
-        color: $orange_bistre;
-    
-        &::before {
-            position: absolute;
-            left: -6px;
-            z-index: -1;
-            border-bottom: 150px solid transparent;
-            border-left: 150px solid white;
-            content: "";
-        }
-    }
+  position: relative;
+  border-radius: 0;
+  border: none;
+  background-color: $white_smoke;
+  .card-title {
+    position: absolute;
+    left: 6px;
+    z-index: 1;
+    font-size: $fontsize-l;
+    font-weight: 700;
+    line-height: 29px;
+    color: $orange_bistre;
 
-    .card-image {
-        overflow: hidden;
-        img {
-            width: 100%;
-            transition: all 0.5s ease;
-            @media screen and (min-width: $breakpoint-md)
-            {
-                &:hover {
-                transform: scale(1.2);
-                
-                }
-            }
-        }
+    &::before {
+      position: absolute;
+      left: -6px;
+      z-index: -1;
+      border-bottom: 150px solid transparent;
+      border-left: 150px solid white;
+      content: "";
     }
+  }
 
+  .card-image {
+    overflow: hidden;
+    img {
+      width: 100%;
+      transition: all 0.5s ease;
+      @media screen and (min-width: $breakpoint-md) {
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  .card-body {
+    padding: 32px 37px;
     .card-text {
-        line-height: 33px;
-        font-size: $fontsize-s;
-        margin: 32px auto 0;
-        padding: 0px 37px;
+      line-height: 33px;
+      font-size: $fontsize-s;
+      text-align: center;
     }
-
     .button {
-        margin: 30px auto 32px;
+      text-align: center;
+      margin: auto;
     }
+  }
 }
