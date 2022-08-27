@@ -28,7 +28,7 @@
     overflow: hidden;
     img {
       width: 100%;
-      transition: all 0.5s ease;
+      transition: transform 0.5s ease;
       @media screen and (min-width: $breakpoint-md) {
         &:hover {
           transform: scale(1.2);
@@ -44,7 +44,6 @@
       text-align: center;
     }
     .button {
-      text-align: center;
       margin: auto;
     }
   }
