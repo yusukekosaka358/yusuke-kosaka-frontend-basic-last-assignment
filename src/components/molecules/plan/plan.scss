@@ -3,12 +3,9 @@
 .plan {
   font-weight: 700;
   box-sizing: border-box;
-
-  &.odd {
-    border: 1px solid $gray_gainsboro;
-    .plan-name {
-      background-color: $orange_zorba;
-    }
+  border: 1px solid $gray_gainsboro;
+  .plan-name {
+    background-color: $orange_zorba;
   }
 
   &.even {
@@ -60,7 +57,7 @@
       text-align: center;
       font-weight: 400;
       padding: 20px 10px;
-      border: 1px solid $gray_gainsboro;
+      border-top: 1px solid $gray_gainsboro;
     }
   }
 
