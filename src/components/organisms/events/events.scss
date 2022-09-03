@@ -14,7 +14,6 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    margin-bottom: 14px;
 
     @media (min-width: $breakpoint-md) {
       margin-bottom: 30px;
@@ -85,5 +84,9 @@
         border-top: none;
       }
     }
+  }
+  .news-and-events-more {
+    align-self: flex-end;
+    margin-top: 30px;
   }
 }
