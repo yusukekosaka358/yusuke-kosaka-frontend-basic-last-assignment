@@ -1,0 +1,68 @@
+@use "../../variables" as *;
+
+.plan {
+  font-weight: 700;
+  box-sizing: border-box;
+  border: 1px solid $gray_gainsboro;
+  .plan-name {
+    background-color: $orange_zorba;
+  }
+
+  &.even {
+    border: 5px solid $orange_bistre;
+    .plan-name {
+      background-color: $orange_bistre;
+    }
+  }
+
+  .plan-name {
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: $fontsize-l;
+    line-height: 29px;
+  }
+
+  .plan-price {
+    text-align: center;
+    background-color: $gray_desertStorm;
+    color: $orange_bistre;
+    padding: 24px 24px;
+    font-size: $fontsize-xxl;
+    line-height: 58px;
+
+    &::before {
+      content: "￥";
+      font-size: $fontsize-l;
+      line-height: 29px;
+    }
+
+    &::after {
+      content: "月額";
+      color: black;
+      font-weight: 400;
+      font-size: $fontsize-s;
+      line-height: 20px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 16px;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      text-align: center;
+      font-size: $fontsize-s;
+      font-weight: 400;
+      padding: 20px 10px;
+      border-top: 1px solid $gray_gainsboro;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    margin-bottom: 24px;
+  }
+}
