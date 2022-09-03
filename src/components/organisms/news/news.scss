@@ -1,0 +1,40 @@
+@use "../../variables" as *;
+
+.news {
+  display: flex;
+  flex-direction: column;
+  .news-list {
+    border-bottom: 1px solid $gray_gainsboro;
+    .news-article {
+      background-color: $white;
+      box-sizing: border-box;
+      border: 1px solid $gray_gainsboro;
+      border-bottom: none;
+      height: 85px;
+      padding: 20px;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      .time {
+        font-size: 12px;
+        line-height: 1;
+        color: $gray_nobel;
+        margin-bottom: 10px;
+      }
+      .news-link {
+        line-height: 23px;
+        color: $black;
+        transition: all 0.2s ease;
+        &:hover {
+          color: $orange_bistre;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .news-and-events-more {
+    align-self: flex-end;
+    margin-top: 30px;
+  }
+}
